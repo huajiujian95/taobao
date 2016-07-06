@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>轮播图</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style type="text/css">
+*{margin:0;border:0;list-style: none;padding: 0;}
+	#container{
+		width:520px;
+		height: 280px;
+		overflow: hidden;
+		margin:0 auto;
+		position: relative;
+	}
+	#container ul{overflow: hidden;width:4000px;position: absolute;left:0;top:0;}
+	#container ul li{
+		width:520px;
+		float: left;
+		height: 280px;
+	}
+	a.prev{
+		background:url(images/btn.png) no-repeat 0px 0px;
+		width:48px;
+		height:60px;
+		display: block;
+		position: absolute;
+		left:-48px;
+		top:50%;
+		margin-top: -30px;
+		cursor: pointer;
+	}
+	a.next{
+		background: url(images/btn.png) no-repeat -48px 0px;
+		width:48px;
+		height:60px;
+		display: block;
+		position: absolute;
+		right:-48px;
+		top:50%;
+		margin-top: -30px;
+		cursor: pointer;
+	}
+	div.nav{
+		position: absolute;
+		
+		left:50%;
+		margin-left:-50px;
+		bottom:20px;
+		width:75px;
+		height: 10px;
+		border-radius: 10px;
+		background-color: #fff;
+		opacity: 0.8;
+		padding: 5px 5px 5px 0px;
+		z-index:5;
+		overflow: hidden;
+	}
+	div.nav span{
+		display: inline-block;
+		float: left;
+		height: 10px;
+		width:10px;
+		border-radius: 50%;
+		background-color: #b7b7b7;
+		margin-left:5px;
+		cursor: pointer;
+	}
+	div.nav span.on{
+		background-color: #ff4400;
+	}
+</style>
+<script src="Thstone.min.js" type="text/javascript" charset="utf-8" async defer></script>
+</head>
+<body>
+    <div id="container">
+    	<ul>
+    		<li><a href="#"><img src="images/b1.jpg"/></a></li>
+    		<li><a href="#"><img src="images/b2.jpg"/></a></li>
+    		<li><a href="#"><img src="images/b3.jpg"/></a></li>
+    		<li><a href="#"><img src="images/b4.jpg"/></a></li>
+    		<li><a href="#"><img src="images/b5.jpg"/></a></li>
+    	</ul>
+    	<a class="prev"></a>
+    	<a class="next"></a>
+    	<div class="nav">
+    		<span class="on"></span>
+    		<span></span>
+    		<span></span>
+    		<span></span>
+    		<span></span>
+    	</div>
+    </div>
+    <script type="text/javascript">
+   
+    	window.onload=function(){
+    		var container=document.querySelector("#container");
+    		var prev=document.querySelector(".prev");
+    		var next=document.querySelector(".next");
+    		var ul=document.querySelector("ul");
+    		var imgwidth=parseInt(Animate.getStyle(ul.children[0],"width"));
+    		var cloneli=ul.children[0].cloneNode(true);
+    		var span=document.querySelectorAll("span");
+    		ul.appendChild(cloneli);
+    		var timer;
+            var autoplay=function(){
+    	        clearInterval(timer);
+    	        timer=setInterval(function(){
+    			     next.onclick();},3000);
+            }
+    		container.onmouseover=function(){
+                Animate.move(prev,{left:"0px"},17);
+                Animate.move(next,{right:"0px"},17);
+                console.log(prev.style.left);
+    		}
+    		container.onmouseout=function(){
+                Animate.move(prev,{left:"-48px"},17);
+                Animate.move(next,{right:"-48px"},17);
+    		}
+    		var count=0;
+    		next.onclick=function(){
+                count++;
+                if(count==6){
+                	count=1;
+                	ul.style.left="0px";
+                }
+                Animate.move(ul,{left:-1*count*imgwidth+"px"},17);
+                for(var i=0;i<span.length;i++){
+                	span[i].className="";
+                }
+                if(count>4){
+                	span[0].className="on";
+                }else{
+                span[count].className="on";}
+    		}
+    		prev.onclick=function(){
+                count--;
+                if(count==-1){
+                	count=4;
+                	ul.style.left=-1*(count+1)*imgwidth+"px";
+                }
+                Animate.move(ul,{left:-1*count*imgwidth+"px"},17);
+                 for(var i=0;i<span.length;i++){
+                	span[i].className="";
+                }
+                if(count<0){
+                	span[4].className="on";
+                }else{
+                span[count].className="on";}
+    		}
+    		for(var i=0;i<span.length;i++){
+    			span[i].index=i;
+    			span[i].onclick=function(){
+    				for(var k=0;k<span.length;k++){
+    					span[k].className="";
+    				}
+                     this.className="on";
+                     count=this.index;
+                     autoplay();
+                     Animate.move(ul,{left:-1*this.index*imgwidth+"px"},17);
+    			}
+    		}
+    		autoplay();
+    	}
+    </script>
+</body>
+</html>

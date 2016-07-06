@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>淘宝网 - 我的购物车</title>
+<link rel="shortcut icon" href="images/title.png">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="cart-css/main.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-2.2.3.js"></script>
+<script src="js/Thstone.js"></script>
+
+</head>
+<body>
+<header>
+		<div  class="h-head">
+			<div class="h-head-l">
+				<div class="loginswitch">
+				<a  class="login" href="signIn.html" target="_self">亲，请登录</a>
+				<div class="logined">
+					<div class="logined-t">
+						<div class="logined-t-1">
+							<a href="#">账号管理</a>|
+							<a class="cancellogin" href="javascript:void(0)">退出</a>
+						</div>
+						<div class="logined-t-2">
+							<a href="#"><img src="images/user-nick-photo.jpg"></a>
+							<a href="#">我可尊享<span>8</span>项特权</a>
+						</div>
+						<div class="logined-t-3">
+							<a href="#">我当前可享受<span>5</span>天<strong>周年纪念</strong></a>
+						</div>
+					</div>
+					
+					<div class="logined-b">
+				        <div class="logined-b-con">
+						<ul>
+							<li><a href="#"><img src="images/login-tab-8.png"/></a><a href="#">周年纪念</a></li>
+                             <li><a href="#"><img src="images/login-tab-5.png"/></a><a href="#">会员日</a></li>
+                             <li><a href="#"><img src="images/login-tab-3.png"/></a><a href="#">生日特权</a></li>
+                             <li><a href="#"><img src="images/login-tab-4.png"/></a><a href="#">会员升级</a></li>
+                             <li><a href="#"><img src="images/login-tab-6.png"/></a><a href="#">节日特权</a></li>
+                             <li><a href="#"><img src="images/login-tab-7.png"/></a><a href="#">百笔好礼</a></li>
+                             <li><a href="#"><img src="images/login-tab-2.png"/></a><a href="#">百天好礼</a></li>
+                             <li><a href="#"><img src="images/login-tab-1.png"/></a><a href="#">好评达人</a></li>
+						</ul>
+						</div>
+						<a class="login-prev" href="javascript:void(0)"><</a>
+						<a class="login-next" href="javascript:void(0)">></a>
+					</div>
+				</div>
+                </div>
+				<a class="register" href="register.html" target="_self">免费注册</a>
+				<a href="#">手机逛淘宝</a>
+			</div>
+			<div class="h-head-r">
+				<ul>
+					<li><a href="#">我的淘宝</a></li>
+					<li><a href="cart.html">购物车</a></li>
+					<li><a href="#">收藏夹</a></li>
+					<li><a href="#">商品分类</a></li>
+					<li><a href="#">卖家中心</a></li>
+					<li><a href="#">联系客服</a></li>
+					<li><a href="#">网站导航</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div id="content">
+		<div class="content-wrap">
+			<div class="content-h">
+				<div class="content-h-l">
+					<a href="index.html" title="淘宝网 Taobao.com-阿里巴巴旗下网站"><img src="images/logo.jpg"/></a>
+					<h2>购物车</h2>
+				</div>
+				<div class="content-h-r">
+					<input class="serach" type="text"/>
+					<input class="submit" type="button" value="搜索"/>
+					<ul>
+						<li class="serach-selected">宝贝</li>
+						<li>店铺</li>
+						<li>天猫</li>
+					</ul>
+				</div>
+			</div>
+			<div class="content-c">
+				<div class="content-c-h">
+					<ul>
+						<li class="active allcount">全部商品<span>10</span></li>
+						<li>降价商品<span>0</span></li>
+						<li class="">库存紧张<span>0</span></li>
+					</ul>
+					<div class="selproduct">
+						<span>已选商品(不含运费)</span>
+						<em>￥0.00</em>
+						<input type="button" value="结算"/>
+					</div>
+				</div>
+				<div class="content-list">
+
+					<input type="checkbox" value="全选"/>
+					<ul>
+						<li>全选</li>
+						<li class="detail">商品信息</li>
+						<li>单价(元)</li>
+						<li>数量</li>
+						<li>金额(元)</li>
+						<li>操作</li>
+					</ul>
+				</div>
+				<div class="content-con">
+					<!-- <div class="product">
+
+						<label><input type="checkbox"/></label>
+						
+                        <div class="pro-con">
+						<div class="product-img">
+							<a href="product.html">
+								<img src="images/imglist1.jpg"/>
+							</a>
+						</div>
+						<div class="describe">
+							<a href="product.html">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+							<span class="budget">分期购</span>
+						</div>
+					</div>
+						<div class="product-catlog">
+							<div><span>颜色分类:</span>
+								<span>黑色表身x驼色表带</span>
+							</div>
+						</div>
+						<div class="price">
+							990.00
+						</div>
+						<div class="count">
+							<a href="javascript:void(0)">-</a>
+							<input class="countinput" type="text" value="" />
+							<a href="javascript:void(0)">+</a>
+						</div>
+						<div class="sub">
+							<span>990.00</span>
+						</div>
+						<div class="operate">
+							<a href="javascript:void(0)">移入收藏夹</a>
+							<a href="javascript:void(0)">删除</a>
+							<a class="similar" href="javascript:void(0)">相似宝贝</a>
+						</div>
+					</div> -->
+				</div>
+				<div class="content-b">
+				    <label for="checkall">
+						<input class="checkall" type="checkbox"/>全选
+				    </label>
+				    <ul>
+				    	<li><a href="javascript:void(0)">删除</a></li>
+				    	<li><a href="javascript:void(0)">清除失效宝贝</a></li>
+				    	<li><a href="javascript:void(0)">移入收藏夹</a></li>
+				    	<li><a href="javascript:void(0)">分享</a></li>
+				    	<li><a href="javascript:void(0)">开始对比</a></li>
+				    </ul>
+				    <div class="content-b-r">
+					    <div class="selcount">已选商品<span class="checkcount">0</span>件</div>
+					    <div class="suball">合计(不含运费):<span class="dollar">￥</span><span class="dollarsub">0.00</span></div>
+					    <div class="checkbtn"><input class="pay" type="button" value="结算"/></div>
+				    </div>
+				</div>
+				<div class="recommend">
+					<div class="recommend-h">
+						<ul>
+							<li class="active">掌柜热卖</li>
+							<li>最近浏览过的</li>
+							<li>猜你喜欢的</li>
+						</ul>
+					</div>
+					<div class="recommend-c">
+						<div class="recommend-c-1 carousel active">
+							<ul>
+								<li>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist1.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist2.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist3.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div class="special">
+									 <a class="imgcon" href="#"><img src="images/cartimglist4.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+								</li>
+								<li>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist5.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist6.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist7.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div class="special">
+									 <a class="imgcon" href="#"><img src="images/cartimglist8.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+								</li>
+																
+								<li>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist9.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist10.png"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist11.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div class="special">
+									 <a class="imgcon" href="#"><img src="images/cartimglist12.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+								</li>
+								<li>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist13.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist14.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist15.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div class="special">
+									 <a class="imgcon" href="#"><img src="images/cartimglist16.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+								</li>
+								<li>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist17.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist18.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist19.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+								   <div class="special">
+									 <a class="imgcon" href="#"><img src="images/cartimglist20.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+								</li>
+							</ul>
+							<div class="prev"></div>
+							<div class="next"></div>
+							<div class="dot">
+								<span class="carousel-on"></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+						<div class="recommend-c-2 carousel">
+							<ul>
+								<li>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist20.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist19.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist18.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div class="special">
+									 <a class="imgcon" href="#"><img src="images/cartimglist17.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+								</li>
+								<li>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist16.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist15.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist14.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div class="special">
+									 <a class="imgcon" href="#"><img src="images/cartimglist13.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+								</li>
+																
+								<li>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist12.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist11.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist10.png"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div class="special">
+									 <a class="imgcon" href="#"><img src="images/cartimglist9.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+								</li>
+								<li>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist8.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist7.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist6.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div class="special">
+									 <a class="imgcon" href="#"><img src="images/cartimglist5.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+								</li>
+								<li>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist4.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist3.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist2.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+								   <div class="special">
+									 <a class="imgcon" href="#"><img src="images/cartimglist1.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+								</li>
+							</ul>
+							<div class="prev"></div>
+							<div class="next"></div>
+							<div class="dot">
+								<span class="carousel-on"></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+						<div class="recommend-c-3 carousel">
+							<ul>
+								<li>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist1.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist2.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist3.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div class="special">
+									 <a class="imgcon" href="#"><img src="images/cartimglist4.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+								</li>
+								<li>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist1.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist2.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist3.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div class="special">
+									 <a class="imgcon" href="#"><img src="images/cartimglist4.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+								</li>
+																
+								<li>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist9.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist10.png"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist11.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div class="special">
+									 <a class="imgcon" href="#"><img src="images/cartimglist12.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+								</li>
+								<li>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist13.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist14.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist15.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div class="special">
+									 <a class="imgcon" href="#"><img src="images/cartimglist16.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+								</li>
+								<li>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist17.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist18.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+									<div>
+									 <a class="imgcon" href="#"><img src="images/cartimglist19.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+								   <div class="special">
+									 <a class="imgcon" href="#"><img src="images/cartimglist20.jpg"/></a>
+									 <span>￥899.00</span>
+									 <a href="#">现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</a>
+									</div>
+								</li>
+							</ul>
+							<div class="prev"></div>
+							<div class="next"></div>
+							<div class="dot">
+								<span class="carousel-on"></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="foot">
+		<div class="foot-wrap">
+			<div class="foot-t">
+				<ul>
+					<li>
+						<img src="images/foot-t-1.png" alt="">
+						<h2>消费者权益</h2>
+						<ul><li><a href="#">保障范围</a></li>
+						<li><a href="#">退货退款流程</a></li>
+						<li><a href="#">服务中心</a></li>
+						<li><a href="#">更多特色服务</a></li>
+						</ul>
+					</li>
+					<li>
+						<img src="images/foot-t-2.png" alt="">
+						<h2>新手上路</h2>
+						<ul><li><a href="">新手专区</a></li>
+						<li><a href="">消费警示</a></li>
+						<li><a href="">交易安全</a></li>
+						<li><a href="">24小时在线</a></li>
+						<li><a href="#">免费开店</a></li></ul>
+					</li>
+					<li>
+						<img src="images/foot-t-3.png" alt="">
+						<h2>付款方式</h2>
+						<ul><li><a href="">快捷支付</a></li>
+						<li><a href="">信用卡</a></li>
+						<li><a href="">余额宝</a></li>
+						<li><a href="">蚂蚁花呗</a></li>
+						<li><a href="#">货到付款</a></li>
+						</ul>
+					</li>
+					<li>
+						<img src="images/foot-t-4.png" alt="">
+						<h2>淘宝特色</h2>
+						<ul><li><a href="">手机淘宝</a></li>
+						<li><a href="">旺信</a></li>
+						<li><a href="">大众评审</a></li>
+						<li><a href="">B格指蓝</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="foot-c">
+				<ul>
+					<li><a href="#">阿里巴巴集团</a></li>
+					<li><a href="#">淘宝网</a></li>
+					<li><a href="#">天猫</a></li>
+					<li><a href="#">聚划算</a></li>
+					<li><a href="#">全球速卖通</a></li>
+					<li><a href="#">阿里巴巴国际交易市场</a></li>
+					<li><a href="#">1688</a></li>
+					<li><a href="#">阿里妈妈</a></li>
+					<li><a href="#">阿里旅行·去啊</a></li>
+					<li><a href="#">阿里云计算</a></li>
+					<li><a href="#">YunOS</a></li>
+					<li><a href="#">阿里通信</a></li>
+					<li><a href="#">一淘</a></li>
+					<li><a href="#">万网</a></li>
+					<li><a href="#">高德</a></li>
+					<li><a href="#">UC</a></li>
+					<li><a href="#">友盟</a></li>
+					<li><a href="#">虾米</a></li>
+					<li><a href="#">天天动听</a></li>
+					<li><a href="#">来往</a></li>
+					<li><a href="#">钉钉</a></li>
+					<li><a href="#">支付宝</a></li>
+				</ul>
+			</div>
+			<div class="foot-b">
+				<ul class="foot-b-f">
+					<li><a href="#">关于淘宝</a></li>
+					<li><a href="#">合作伙伴</a></li>
+					<li><a href="#">营销中心</a></li>
+					<li><a href="#">廉正举报</a></li>
+					<li><a href="#">联系客服</a></li>
+					<li><a href="#">开放平台</a></li>
+					<li><a href="#">诚征英才</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">网站地图</a></li>
+					<li><a href="#">法律声明</a></li>
+					<li><a href="#">知识产权</a></li>	
+				</ul>
+				<p>@2003-2016 Taobao.com 版权所有</p>
+				<ul class="foot-b-1">
+					<li><span>网络文化经营许可证：</span><a href="#">浙网文[2013]0268-027号</a></li>
+					<li><span>增值电信业务经营许可证:</span><a href="#">浙B2-20080224</a></li>
+					<li><span>信息网络传播视听节目许可证:</span><span>1109364号</span></li>
+					<li><span>互联网违法和不良信息举报电话:</span><span>0571-81683755 blxx@list.alibaba-inc.com</span></li>
+				</ul>
+				<ul class="foot-b-2">
+					<li><a class="foot-b-2-1" href="#"></a></li>
+					<li><a class="foot-b-2-2" href="#"></a></li>
+					<li><a class="foot-b-2-3" href="#"></a></li>
+					<li><a class="foot-b-2-4" href="#"></a></li>
+					<li><a class="foot-b-2-5" href="#"></a></li>
+					<li><a class="foot-b-2-6" href="#"></a></li>
+					<li><a class="foot-b-2-7" href="#"></a></li>
+					<li><a class="foot-b-2-8" href="#"></a></li>
+					<li><a class="foot-b-2-9" href="#"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="js/cart.js"></script>   
+</body>
+</html>

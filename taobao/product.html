@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>淘宝网 - 淘！我喜欢</title>
+<link rel="shortcut icon" href="images/title.png">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="product-css/main.css" rel="stylesheet">
+<script src="js/jquery-2.2.3.js"></script>
+<script src="js/Thstone.js"></script>
+</head>
+<body>
+	<header>
+		<div  class="h-head">
+			<div class="h-head-l">
+				<div class="loginswitch">
+				<a  class="login" href="signIn.html" target="_self">亲，请登录</a>
+				<div class="logined">
+					<div class="logined-t">
+						<div class="logined-t-1">
+							<a href="#">账号管理</a>|
+							<a class="cancellogin" href="javascript:void(0)">退出</a>
+						</div>
+						<div class="logined-t-2">
+							<a href="#"><img src="images/user-nick-photo.jpg"></a>
+							<a href="#">我可尊享<span>8</span>项特权</a>
+						</div>
+						<div class="logined-t-3">
+							<a href="#">我当前可享受<span>5</span>天<strong>周年纪念</strong></a>
+						</div>
+					</div>
+					
+					<div class="logined-b">
+				        <div class="logined-b-con">
+						<ul>
+							<li><a href="#"><img src="images/login-tab-8.png"/></a><a href="#">周年纪念</a></li>
+                             <li><a href="#"><img src="images/login-tab-5.png"/></a><a href="#">会员日</a></li>
+                             <li><a href="#"><img src="images/login-tab-3.png"/></a><a href="#">生日特权</a></li>
+                             <li><a href="#"><img src="images/login-tab-4.png"/></a><a href="#">会员升级</a></li>
+                             <li><a href="#"><img src="images/login-tab-6.png"/></a><a href="#">节日特权</a></li>
+                             <li><a href="#"><img src="images/login-tab-7.png"/></a><a href="#">百笔好礼</a></li>
+                             <li><a href="#"><img src="images/login-tab-2.png"/></a><a href="#">百天好礼</a></li>
+                             <li><a href="#"><img src="images/login-tab-1.png"/></a><a href="#">好评达人</a></li>
+						</ul>
+						</div>
+						<a class="login-prev" href="javascript:void(0)"><</a>
+						<a class="login-next" href="javascript:void(0)">></a>
+					</div>
+				</div>
+                </div>
+				<a class="register" href="register.html" target="_self">免费注册</a>
+				<a href="#">手机逛淘宝</a>
+			</div>
+			<div class="h-head-r">
+				<ul>
+					<li><a href="#">我的淘宝</a></li>
+					<li><a href="cart.html">购物车</a></li>
+					<li><a href="#">收藏夹</a></li>
+					<li><a href="#">商品分类</a></li>
+					<li><a href="#">卖家中心</a></li>
+					<li><a href="#">联系客服</a></li>
+					<li><a href="#">网站导航</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	<div id="cartside">
+		<div class="cartlogo over">
+			<a class="cartover" href="cart.html">
+				<img src="images/cartlogo.png"/>
+				<span>购物车</span>
+			</a>
+			<div class="cartlogoside sidediv">我的购物车</div>
+		</div>
+		<div class="scrolltop over">
+			<a class="cartover" href="javascript">
+				<img src="images/proscrolltop.png"/>
+			</a>
+			<div class="scrolltopside sidediv">顶部</div>
+		</div>
+	</div>
+	<div id="head-b">
+		<div class="head-b-wrap">
+			<div class="head-b-l">
+				<a href="#">
+					<img src="images/globeshop.png"/>
+				</a>
+			</div>
+			<div class="head-b-r">
+				<input class="serach" type="text"/>
+				<input class="serach-globe" type="button" value="搜全球购"/>
+				<input class="serach-taobao" type="button"  value="搜淘宝"/>
+			</div>
+		</div>
+		<div class="head-b">
+			<ul class="list">
+				<li class="catlog li"><a href="#">所有分类</a>
+				 <ul class="productlist">
+						<li class="allproduct"><a href="#">所有宝贝</a>
+							<ul>
+							<li>按销量</li>
+							<li>按销量</li>
+							<li>按价格</li>
+							</ul> 
+						</li>
+						<li><a href="#">Q&Q</a></li>
+						<li><a href="#">KOMONO</a></li>
+						<li><a href="#">MVMT</a></li>
+						<li><a href="#">轻商务半熟男</a></li>
+						<li><a href="#">复古街头潮流</a></li>
+						<li><a href="#">最美女友</a></li>
+					</ul>  
+				</li>
+				<li class="li"><a href="#">首页</a></li>
+				<li class="li"><a href="#">店铺活动</a></li>
+				<li class="li"><a href="#">点我点我！我是促销</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="content">
+		<div class="content-c">
+			<div class="imgshow">
+				<div class="bigimg">
+					<img class="bigimg-i"  src="images/imglist3.jpg"/>
+					<img  class="bigimg-i"  src="images/imglist2.jpg"/>
+					<img class="bigimg-i"  src="images/imglist1.jpg"/>
+				<div class="magnify"></div>
+				<div class="enlarge">
+				<div><img src="images/imglist1.jpg"></div>
+			   </div>
+				</div>
+				<div class="imglist">
+					<ul>
+						<li><img src="images/imglist1.jpg" alt=""></li>
+						<li><img src="images/imglist2.jpg" alt=""></li>
+						<li><img src="images/imglist3.jpg" alt=""></li>
+					</ul>
+				</div>
+			</div>
+			<div class="prodetail">
+				<h2 class="describe"> 现货 包税 正品 MVMT 复古 休闲 商务 真皮 石英 手表 男友 礼物</h2>
+				<p>出于对钟表的热爱，但又厌倦了需要花费过高价格方能买到的名牌手表 ，杰克和克雷默（Jake & Kramer）便组建团队、创建了钟表品牌MVMT。优质的原料，配以简约主义的外观设计，2014秋冬新系列有皮革或精钢表带7款色可供选择，不论配职业装还是休闲装都同样时尚、显档次，毫不逊色于动辄数百美元的名牌</p>
+				<div class="price">
+					<span>价格</span>
+					<span class="pricedetail">￥890.00-990.00</span>
+					<div class="price-comment">
+						<p>10</p>
+						<p>累计评论</p>
+					</div>
+					<div>
+						<p>0</P>
+						<p>交易成功</p>
+					</div>
+				</div>
+				<div class="color-select">
+					<p class="color-select-l">颜色分类</p>
+					<ul class="color-select-r">
+						<li><img  title="银色表身x黑色表带" src="images/color1.jpg"/></li>
+						<li><img title="黑色表身x驼色表带" src="images/color2.jpg"/></li>
+					</ul>
+				</div>
+				<div class="count-select">
+					<span>数量</span>
+					<a class="reduce" href="javascript:void(0)">-</a>
+					<input class="countinput" type="text" value="1"/>
+					<a class="add" href="javascript:void(0)">+</a>
+				</div>
+				<div class="pay">
+					<span>花呗分期</span>
+					<ul>
+						<li>
+							<p>￥<span>303.38</span><em>X3期</em></p>
+							<p>(含手续费)</p>
+						</li>
+					    <li>
+					    	<p>￥<span>155.00</span><em>X6期</em></p>
+							<p>(含手续费)</p>
+						</li>
+						<li>
+							<p>￥<span>104.81</span><em>X9期</em></p>
+							<p>(含手续费)</p>
+						</li>
+						 <li>
+						 	<p>￥<span>80.09</span><em>X12期</em></p>
+							<p>(含手续费)</p>
+						</li>
+					</ul>
+				</div>
+				<div class="button">
+					<input class="buy" type="button" value="立即购买"/>
+					<input class="cart" type="button" value="加入购物车"/>
+				</div>
+
+				<div class="buy-select">
+				  <div class="buy-color-select">
+					<p class="color-select-l">颜色分类</p>
+					<ul class="color-select-r">
+						<li><img title="银色表身x黑色表带" src="images/color1.jpg"/></li>
+						<li><img title="黑色表身x驼色表带" src="images/color2.jpg"/></li>
+					</ul>
+				</div>
+				<div class="buy-count-select">
+					<span>数量</span>
+					<a class="reduce" href="javascript:void(0)">-</a>
+					<input class="countinput" type="text" value="1"/>
+					<a class="add" href="javascript:void(0)">+</a>
+				</div>
+				<input class="check" type="button" value="确定"/>
+                <div class="buy-pay">
+					<span>花呗分期</span>
+					<ul>
+						<li>
+							<p>￥<span>303.38</span><em>X3期</em></p>
+							<p>(含手续费)</p>
+						</li>
+					    <li>
+					    	<p>￥<span>155.00</span><em>X6期</em></p>
+							<p>(含手续费)</p>
+						</li>
+						<li>
+							<p>￥<span>104.81</span><em>X9期</em></p>
+							<p>(含手续费)</p>
+						</li>
+						 <li>
+						 	<p>￥<span>80.09</span><em>X12期</em></p>
+							<p>(含手续费)</p>
+						</li>
+					</ul>
+				</div>
+				<em class="close-buy">x</em>
+				</div>
+
+				<div class="cart-select">
+				  <div class="cart-color-select">
+					<p class="color-select-l">颜色分类</p>
+					<ul class="color-select-r">
+						<li><img title="银色表身x黑色表带" src="images/color1.jpg"/></li>
+						<li><img title="黑色表身x驼色表带" src="images/color2.jpg"/></li>
+					</ul>
+				</div>
+				<div class="cart-count-select">
+					<span>数量</span>
+					<a class="reduce" href="javascript:void(0)">-</a>
+					<input class="countinput" type="text" value="1"/>
+					<a class="add" href="javascript:void(0)">+</a>
+				</div>
+				<input class="check" type="button" value="确定"/>
+                <div class="cart-pay">
+					<span>花呗分期</span>
+					<ul>
+						<li>
+							<p>￥<span>303.38</span><em>X3期</em></p>
+							<p>(含手续费)</p>
+						</li>
+					    <li>
+					    	<p>￥<span>155.00</span><em>X6期</em></p>
+							<p>(含手续费)</p>
+						</li>
+						<li>
+							<p>￥<span>104.81</span><em>X9期</em></p>
+							<p>(含手续费)</p>
+						</li>
+						 <li>
+						 	<p>￥<span>80.09</span><em>X12期</em></p>
+							<p>(含手续费)</p>
+						</li>
+					</ul>
+				</div>
+				<em class="close-cart">x</em>
+				</div>
+			</div>
+		</div>
+		<div class="content-b">
+			<div class="content-b-1">
+				<div class="content-b-1-c">
+					<img src="images/imglist1.jpg"/>
+					<div>正品复古休闲</div> 
+					<span>￥849</span>
+				</div>
+				<div class="content-b-1-c">
+					<img src="images/imglist2.jpg"/>
+					<div>正品复古休闲</div> 
+					<span>￥849</span>
+				</div>
+				<div class="content-b-1-c">
+					<img src="images/imglist3.jpg"/>
+					<div>正品复古休闲</div> 
+					<span>￥849</span>
+				</div>
+				<div class="content-b-1-c">
+					<img src="images/imglist2.jpg"/>
+					<div>正品复古休闲</div> 
+					<span>￥849</span>
+				</div>
+				<div class="content-b-1-c">
+					<img src="images/imglist1.jpg"/>
+					<div>正品复古休闲</div> 
+					<span>￥849</span>
+				</div>
+			    <div class="content-b-1-c">
+					<img src="images/imglist1.jpg"/>
+					<div>正品复古休闲</div> 
+					<span>￥849</span>
+				</div>
+			</div>
+			<div class="content-b-2">
+				<ul>
+					<li class="special">宝贝详情</li>
+					<li>累计评价</li>
+					<li>专享服务</li>
+				</ul>
+			</div>
+			<div class="fixed">
+				<ul class="fixed-ul">
+					<li class="special">宝贝详情</li>
+					<li>累计评价</li>
+					<li>专享服务</li>
+				</ul>
+				<input class="addCart" type="button" value="加入购物车">
+				 <div class="cart-select">
+				 	<div class="pricedet">
+				 		<span>价格</span>
+				 		<span  class="color-s">￥890.00—990.00</span>
+				 	</div>
+				  <div class="cart-color-select">
+					<p class="color-select-l">颜色分类</p>
+					<ul class="color-select-r">
+						<li><img title="银色表身x黑色表带" src="images/color1.jpg"/></li>
+						<li><img title="黑色表身x驼色表带" src="images/color2.jpg"/></li>
+					</ul>
+				</div>
+				<div class="cart-count-select">
+					<span>数量</span>
+					<a class="reduce" href="javascript:void(0)">-</a>
+					<input class="countinput" type="text" value="1"/>
+					<a class="add" href="javascript:void(0)">+</a>
+				</div>
+				<input class="check" type="button" value="确定"/>
+                <div class="cart-pay">
+					<span>花呗分期</span>
+					<ul>
+						<li>
+							<p>￥<span>303.38</span><span>X3期</span></p>
+							<p>(含手续费)</p>
+						</li>
+					    <li>
+					    	<p>￥<span>155.00</span><span>X6期</span></p>
+							<p>(含手续费)</p>
+						</li>
+						<li>
+							<p>￥<span>104.81</span><span>X9期</span></p>
+							<p>(含手续费)</p>
+						</li>
+						 <li>
+						 	<p>￥<span>80.09</span><span>X12期</span></p>
+							<p>(含手续费)</p>
+						</li>
+					</ul>
+				</div>
+				<em class="close-cart">x</em>
+				</div>
+			</div>
+				<div class="content-b-1">
+				<div class="content-b-1-c">
+					<img src="images/imglist1.jpg"/>
+					<div>正品复古休闲</div> 
+					<span>￥849</span>
+				</div>
+				<div class="content-b-1-c">
+					<img src="images/imglist2.jpg"/>
+					<div>正品复古休闲</div> 
+					<span>￥849</span>
+				</div>
+				<div class="content-b-1-c">
+					<img src="images/imglist3.jpg"/>
+					<div>正品复古休闲</div> 
+					<span>￥849</span>
+				</div>
+				<div class="content-b-1-c">
+					<img src="images/imglist2.jpg"/>
+					<div>正品复古休闲</div> 
+					<span>￥849</span>
+				</div>
+				<div class="content-b-1-c">
+					<img src="images/imglist1.jpg"/>
+					<div>正品复古休闲</div> 
+					<span>￥849</span>
+				</div>
+			    <div class="content-b-1-c">
+					<img src="images/imglist1.jpg"/>
+					<div>正品复古休闲</div> 
+					<span>￥849</span>
+				</div>
+			</div>
+			<div class="detail">
+				如果你看到这个链接时，会跟我一起热血沸腾，那么表示MVMT这个名字确确实实刻进了你的记忆里。 
+
+当一个设计品牌日渐成熟、壮大，它不再如履薄冰、小心翼翼勘察依靠市场需求来进行系列更迭，而是如同每一个充满丰富设计能量的个体，在每一季的春夏、秋冬，主动地向喜爱他们、质疑他们的受众展示它全新的思路与情怀。
+
+BOOM SHAKALAKA了！装逼的话说完再让我尖叫一通，我完全没有预料到MVMT会在春季尾声的5月发布2015S'S它的全新系列Chrono啊！
+
+请记得，CHRONO它是LOOP家第一款的三眼表喔！！
+
+			</div>
+			<div class="content-b-1">
+				<div class="content-b-1-c">
+					<img src="images/imglist1.jpg"/>
+					<div>正品复古休闲</div> 
+					<span>￥849</span>
+				</div>
+				<div class="content-b-1-c">
+					<img src="images/imglist2.jpg"/>
+					<div>正品复古休闲</div> 
+					<span>￥849</span>
+				</div>
+				<div class="content-b-1-c">
+					<img src="images/imglist3.jpg"/>
+					<div>正品复古休闲</div> 
+					<span>￥849</span>
+				</div>
+				<div class="content-b-1-c">
+					<img src="images/imglist2.jpg"/>
+					<div>正品复古休闲</div> 
+					<span>￥849</span>
+				</div>
+				<div class="content-b-1-c">
+					<img src="images/imglist1.jpg"/>
+					<div>正品复古休闲</div> 
+					<span>￥849</span>
+				</div>
+			    <div class="content-b-1-c">
+					<img src="images/imglist1.jpg"/>
+					<div>正品复古休闲</div> 
+					<span>￥849</span>
+				</div>
+			</div>
+		</div>	
+	</div>
+	 <div id="foot">
+		<div class="foot-wrap">
+			<div class="foot-t">
+				<ul>
+					<li>
+						<img src="images/foot-t-1.png" alt="">
+						<h2>消费者权益</h2>
+						<ul><li><a href="#">保障范围</a></li>
+						<li><a href="#">退货退款流程</a></li>
+						<li><a href="#">服务中心</a></li>
+						<li><a href="#">更多特色服务</a></li>
+						</ul>
+					</li>
+					<li>
+						<img src="images/foot-t-2.png" alt="">
+						<h2>新手上路</h2>
+						<ul><li><a href="">新手专区</a></li>
+						<li><a href="">消费警示</a></li>
+						<li><a href="">交易安全</a></li>
+						<li><a href="">24小时在线</a></li>
+						<li><a href="#">免费开店</a></li></ul>
+					</li>
+					<li>
+						<img src="images/foot-t-3.png" alt="">
+						<h2>付款方式</h2>
+						<ul><li><a href="">快捷支付</a></li>
+						<li><a href="">信用卡</a></li>
+						<li><a href="">余额宝</a></li>
+						<li><a href="">蚂蚁花呗</a></li>
+						<li><a href="#">货到付款</a></li>
+						</ul>
+					</li>
+					<li>
+						<img src="images/foot-t-4.png" alt="">
+						<h2>淘宝特色</h2>
+						<ul><li><a href="">手机淘宝</a></li>
+						<li><a href="">旺信</a></li>
+						<li><a href="">大众评审</a></li>
+						<li><a href="">B格指蓝</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="foot-c">
+				<ul>
+					<li><a href="#">阿里巴巴集团</a></li>
+					<li><a href="#">淘宝网</a></li>
+					<li><a href="#">天猫</a></li>
+					<li><a href="#">聚划算</a></li>
+					<li><a href="#">全球速卖通</a></li>
+					<li><a href="#">阿里巴巴国际交易市场</a></li>
+					<li><a href="#">1688</a></li>
+					<li><a href="#">阿里妈妈</a></li>
+					<li><a href="#">阿里旅行·去啊</a></li>
+					<li><a href="#">阿里云计算</a></li>
+					<li><a href="#">YunOS</a></li>
+					<li><a href="#">阿里通信</a></li>
+					<li><a href="#">一淘</a></li>
+					<li><a href="#">万网</a></li>
+					<li><a href="#">高德</a></li>
+					<li><a href="#">UC</a></li>
+					<li><a href="#">友盟</a></li>
+					<li><a href="#">虾米</a></li>
+					<li><a href="#">天天动听</a></li>
+					<li><a href="#">来往</a></li>
+					<li><a href="#">钉钉</a></li>
+					<li><a href="#">支付宝</a></li>
+				</ul>
+			</div>
+			<div class="foot-b">
+				<ul class="foot-b-f">
+					<li><a href="#">关于淘宝</a></li>
+					<li><a href="#">合作伙伴</a></li>
+					<li><a href="#">营销中心</a></li>
+					<li><a href="#">廉正举报</a></li>
+					<li><a href="#">联系客服</a></li>
+					<li><a href="#">开放平台</a></li>
+					<li><a href="#">诚征英才</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">网站地图</a></li>
+					<li><a href="#">法律声明</a></li>
+					<li><a href="#">知识产权</a></li>	
+				</ul>
+				<p>@2003-2016 Taobao.com 版权所有</p>
+				<ul class="foot-b-1">
+					<li><span>网络文化经营许可证：</span><a href="#">浙网文[2013]0268-027号</a></li>
+					<li><span>增值电信业务经营许可证:</span><a href="#">浙B2-20080224</a></li>
+					<li><span>信息网络传播视听节目许可证:</span><span>1109364号</span></li>
+					<li><span>互联网违法和不良信息举报电话:</span><span>0571-81683755 blxx@list.alibaba-inc.com</span></li>
+				</ul>
+				<ul class="foot-b-2">
+					<li><a class="foot-b-2-1" href="#"></a></li>
+					<li><a class="foot-b-2-2" href="#"></a></li>
+					<li><a class="foot-b-2-3" href="#"></a></li>
+					<li><a class="foot-b-2-4" href="#"></a></li>
+					<li><a class="foot-b-2-5" href="#"></a></li>
+					<li><a class="foot-b-2-6" href="#"></a></li>
+					<li><a class="foot-b-2-7" href="#"></a></li>
+					<li><a class="foot-b-2-8" href="#"></a></li>
+					<li><a class="foot-b-2-9" href="#"></a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="js/product.js"></script>
+</body>
+</html>
