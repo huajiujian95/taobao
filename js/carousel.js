@@ -17,7 +17,6 @@ play:function(selector,btnwidth,stgspan){
     		var imgwidth=parseInt(Animate.getStyle(container,"width"));
     		var cloneli=ul.children[0].cloneNode(true);
     		var span=container.querySelectorAll("span");
-           
     		ul.appendChild(cloneli);
     		var timer;
             var autoplay=function(){
